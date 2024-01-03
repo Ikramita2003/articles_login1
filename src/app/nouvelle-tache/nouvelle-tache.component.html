@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation-sous tache</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #94989cee;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            max-width: 400px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00ccff;
+        }
+
+        .form-floating {
+            margin-bottom: 20px;
+        }
+
+        .form-control,
+        .form-date {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #939597;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #1e8e9c;
+        }
+
+        .form-date {
+            margin-top: 5px;
+        }
+
+        .btn-primary {
+            background: #05090e;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .btn-primary:hover {
+            background: #696767;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Ajouter unr confirmation</h2>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="taskTitle" placeholder="Task Title">
+            <label for="taskTitle" class="form-label">titre de mini-tache</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="generalIdea" placeholder="General Idea">
+            <label for="generalIdea" class="form-label">Résume général</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="description" placeholder="Description">
+            <label for="description" class="form-label">Déscription</label>
+        </div>
+
+        <label for="startDate" class="form-label">Start and End Date</label>
+        <div class="form-floating">
+            <input type="date" class="form-date" id="startDate">
+            <input type="date" class="form-date" id="endDate">
+        </div>
+
+        <button type="submit" class="btn btn-primary">valider</button>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

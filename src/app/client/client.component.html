@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>cher clients</h1>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul>
+                <li><a routerLink="/profile">Gestion de profil</a></li>
+              </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+        
+              <li class="nav-item">
+                
+<ul>
+    
+    <li><a routerLink="/nouvelle-tache">ajouter une nouvelle confirmation</a></li>
+  </ul>
+  
+  
+
+    
+              </li>
+            </ul>
+            <span class="navbar-text">
+              "Ce qui est bien pour le client est aussi,sur le long terme,bien pour nous"
+            </span>
+          </div>
+        </div>
+      </nav>
+
+
+      <nav class="navbar navbar-light bg-light r">
+        <div class="container-fluid">
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">user_name</th>
+              <th scope="col">tache</th>
+              <th scope="col">détails_tache</th>
+              <th scope="col">comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Donnée 1</td>
+              <td>Donnée 2</td>
+              <td>Donnée 3</td>
+              <td>Donnée 4</td>
+            </tr>
+            <!-- Ajoutez plus de lignes au besoin -->
+          </tbody>
+        </table>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+    
+            #taskList {
+                max-width: 600px;
+                margin: 20px auto;
+                background-color: #367cbd;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .task {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+            }
+    
+            .task input[type="checkbox"] {
+                margin-right: 10px;
+            }
+        </style>
+    
+    <body>
+    
+    <div id="taskList">
+        <h2>Etat d'avancement</h2>
+        <div class="task">
+            <input type="checkbox" id="task1">
+            <label for="task1">état initial</label>
+        </div>
+        <div class="task">
+            <input type="checkbox" id="task2">
+            <label for="task2">état intérmidiaire</label>
+        </div>
+        <div class="task">
+            <input type="checkbox" id="task2">
+            <label for="task2">état final</label>
+        </div>
+
+        <!-- Add more tasks as needed -->
+    
+        <div>
+            <label for="newTask">Commentaire</label>
+            <input type="text" id="newTask">
+            <button onclick="addcmt()">commenter</button>
+        </div>
+    </div>
+    
+    <script>
+        function addTask() {
+            var newTaskInput = document.getElementById('newTask');
+            var taskList = document.getElementById('taskList');
+    
+            if (newTaskInput.value.trim() !== '') {
+                var newTask = document.createElement('div');
+                newTask.className = 'task';
+    
+                var checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+    
+                var label = document.createElement('label');
+                label.textContent = newTaskInput.value;
+    
+                newTask.appendChild(checkbox);
+                newTask.appendChild(label);
+    
+                taskList.appendChild(newTask);
+                newTaskInput.value = '';
+            }
+        }
+    </script>
+      
+   
+  
+  
+      
+      
+      
+  
+
+
+   
+      

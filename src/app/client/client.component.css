@@ -1,0 +1,73 @@
+
+ 
+ /* Style de base pour le titre */
+h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    /* Ajoutez d'autres styles selon vos besoins */
+    animation: pulse 1s infinite alternate; /* Ajoute l'animation pulse avec une durée de 2 secondes, en boucle infinie */
+  }
+  
+  /* Définition de l'animation pulse */
+  @keyframes pulse {
+    to {
+      transform: scale(2.1); /* Augmente la taille du titre à la fin de chaque itération */
+    }
+  }
+  /* Style pour la barre de navigation */
+.navbar {
+    background-color: #f8f9fa; /* Couleur de fond de la barre de navigation */
+  }
+  
+  /* Style pour la marque (brand) */
+  .navbar-brand {
+    color: #007bff; /* Couleur du texte de la marque */
+  }
+  
+  .navbar-brand:hover {
+    color: #0056b3; /* Couleur du texte au survol de la marque */
+  }
+  
+  /* Style pour les liens de la barre de navigation */
+  .navbar-nav .nav-link {
+    color: #495057; /* Couleur du texte des liens */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Couleur du texte au survol des liens */
+  }
+  
+  /* Style pour le bouton de basculement (toggler) */
+  .navbar-toggler-icon {
+    background-color: #4198c0; /* Couleur de fond de l'icône du bouton de basculement */
+  }
+  
+  /* Style pour le texte de la barre de navigation */
+  .navbar-text {
+    color: #007bff; /* Couleur du texte du texte de la barre de navigation */
+  }
+/* Styles spécifiques pour la table */
+.table th, .table td {
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #3498db; /* Couleur de fond de l'en-tête de la colonne */
+    color: #fff; /* Couleur du texte de l'en-tête de la colonne */
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Couleur de fond des lignes impaires */
+  }
+  
+  .table-striped tbody tr:hover {
+    background-color: #e0e0e0; /* Couleur de fond au survol */
+  }
+  
+  /* Ajoutez d'autres styles au besoin */
+  
+
+  
+  
+
